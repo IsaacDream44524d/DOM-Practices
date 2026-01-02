@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links, .left-links, .right-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 10px 20px;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.brand-name {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.container {
+    background: url(photos/the-odyssey-3840x2160-25035.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.top-content {
+    position: relative;
+    height: 90vh;
+    top: 80px;
+    right: 5%;
+    left: 0;
+    margin-left: 30px;
+}
+
+span {
+    display: inline-block;
+    max-width: 450px;
+}
+
+.movie-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.genre {
+    margin-bottom: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.popular-movies img {
+    width: 190px;
+    height: auto;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+p {
+    margin-top: 150px;
+    font-size: 15px;
+    color: white;
+}
+
+.bottom-container {
+    background-color: rgb(19, 19, 58);
+    height: 44vh;
+    color: white;
+}
+
+.bottom-container img {
+    width: auto;
+    height: 190px;
+    border-radius: 5px;
+    margin: 10px 20px;
+}
+
+.Collection {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+    font-size: 15px;
+    margin-top: 100px;
+}
+
+.text {
+    width: 500px;
+    margin: 20px;
+}
+
+.brand {
+    color: rgb(19, 19, 58);
+    font-size: 20px;
+}
+
+#box {
+    padding: 10px;
+    width: 250px;
+}
+
+.button {
+    padding: 13px;
+}
+
+.footer-container p {
+    color: rgb(19, 19, 58);
+    padding-bottom: 50px;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+img {
+    transition: transform 0.4s ease;
+}
+
+button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
