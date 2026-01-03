@@ -15,9 +15,12 @@ The goal of this repo is to:
 - CSS
 - JavaScript (Vanilla JS)
 
-## acknoledgement
+## Acknoledgement
 
 Photo by <a href="https://unsplash.com/@emilwidlund?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emil Widlund</a> on <a href="https://unsplash.com/photos/photo-of-brown-wooden-bookshelf-xrbbXIXAWY0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+i do not take credit of any other photos used in this webpage, all used images are used entirly
+for learning purpose.
       
 
 ## Progress
@@ -30,6 +33,7 @@ Code may be refactored or improved as I learn more.
 - Add more DOM exercises
 - Build small DOM mini-projects
 - Refactor older code with better practices
+- MAKE THE WEBPAGES RESPONSIVE
 
 ---
 
