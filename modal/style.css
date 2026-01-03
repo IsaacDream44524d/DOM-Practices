@@ -43,6 +43,7 @@ ul {
     background: url(photos/the-odyssey-3840x2160-25035.jpg) no-repeat center;
     background-size: cover;
     height: 90vh;
+    transition: filter 0.9s ease;
 }
 
 .top-content {
@@ -167,6 +168,9 @@ button:hover {
     transform: translate(-50%, -50%);
     margin: 40px;
     border-radius: 10px;
+
+    animation-name: animateModal;
+    animation-duration: 0.4s;
 }
 
 .modal-overlay p {
@@ -208,4 +212,26 @@ h2 {
 .secondary-btn:hover {
     background-color: red;
     color: white;
+    cursor: pointer;
+}
+
+#modal-hidden {
+    display: none;
+    z-index: 1;
+}
+
+@keyframes animateModal {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+.container.blurred {
+    filter: blur(3px);
 }

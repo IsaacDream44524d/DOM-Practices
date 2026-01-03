@@ -14,7 +14,7 @@
   <nav class="navbar">
     <div class="left-links">
       <div class="search-icon icon">
-        <img src="icons/search.png" alt="search icon">
+        <img src="icons/search.png" alt="search icon" class ="img">
       </div>
       <ul class="nav-links">
         <li><a href="#">HOME</a></li>
@@ -26,7 +26,7 @@
 
     <div class="right-links">
       <div class="profile-icon icon">
-        <img src="icons/user (2).png" alt="user icon">
+        <img src="icons/user (2).png" alt="user icon" class="img">
       </div>
       <div class="brand-name">EXstream</div>
     </div>
@@ -42,10 +42,10 @@
           to return home after the Trojan War.
         </span>
       </div>
-      <div class="watch-button"><button>Watch</button></div>
+      <div class="watch-button"><button id="watch-btn">Watch</button></div>
       <div class="popular-section">
         <p>Popular Shows</p>
-        <div class="popular-movies">
+        <div class="popular-movies" class ="img">
           <img src="photos/goat-2026-movie-3840x2160-24993.jpg" alt="goat">
           <img src="photos/fallout-2026-series-3840x2160-24947.jpg" alt="fallout season 2">
           <img src="photos/stranger-things-3840x2160-25038.jpg" alt="stranger things season 5">
@@ -58,7 +58,7 @@
     </div>
 
     <div class="bottom-container">
-      <div class="Collection">Collection</div>
+      <div class="Collection" class ="img">Collection</div>
       <img src="photos/the-fantastic-four-3840x2160-24886.jpg" alt="fantastic four">
       <img src="photos/uwp4632125.jpeg" alt="interstellar">
       <img src="photos/joshua-earle-8hVAgHtYyVU-unsplash.jpg" alt="The Abbyss of Loniness">
@@ -80,7 +80,7 @@
     </footer>
   </div>
 
-  <div class="modal-overlay hidden">
+  <div class="modal-overlay" id="modal-hidden">
     <h2>Subscription Required</h2>
     <button class="modal-close"><span>&times;</span></button>
     <p>
@@ -92,8 +92,6 @@
       <buttin class="secondary-btn">Cancel</buttin>
     </div>
   </div>
-
-
 </body>
 
 </html>
