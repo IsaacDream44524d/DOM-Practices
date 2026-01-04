@@ -11,7 +11,7 @@ body {
     align-items: center;
     height: 150vh;
     background: url(laurin-steffens-IVGZ6NsmyBI-unsplash.jpg)
-    no-repeat center center/cover;
+    no-repeat center center/cover fixed;
 }
 
 h1 {
@@ -44,6 +44,8 @@ p {
     color: orange;
     height: 0;
     overflow: hidden;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 .question {
@@ -88,6 +90,18 @@ a:hover {
     right: 280px;
     font-size: 20px;
     
+}
+
+.active .answer {
+    height: 20px;
+}
+
+.active .question::after {
+    content: '-';
+}
+
+.faq-container:hover {
+    cursor: pointer;
 }
 
 
