@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background: url(laurin-steffens-IVGZ6NsmyBI-unsplash.jpg)
+    no-repeat center center/cover;
+}
+
+h1 {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+p {
+    width: 750px;
+}
+
+.open-para {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.faq-container {
+    background-color: #06141B;
+    margin: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.answer {
+    color: orange;
+    height: 0;
+    overflow: hidden;
+}
+
+.question {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.end-para {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 10px;
+}
+
+button {
+    background: transparent;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: orange;
+    transition: tranform 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+.question::after {
+    content: "+";
+    position: absolute;
+    right: 280px;
+    font-size: 20px;
+    
+}
+
+
