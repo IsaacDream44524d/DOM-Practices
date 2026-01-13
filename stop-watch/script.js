@@ -46,11 +46,24 @@ function time() {
     }
 
     setFormat()
-    //timer.innerHTML = twoDigitHr + ':' + twoDigitMin + ':' + twoDigitSec;
+    timer.innerText = twoDigitHr + ':' + twoDigitMin + ':' + twoDigitSec;
 }
 
 
-timeInterval = window.setInterval(time, 1000);
+// FIX BUTTON RENDERING
+
+playStopBtn.addEventListener('click', () => renderButtons());
+
+function renderButtons() {
+    if (timerStatus === 'stoppped') {
+        timeInterval = window.setInterval(time, 1000);
+        timerStatus = 'started'
+    } else {
+        window.clearInterval(timeInterval)
+        timerStatus = 'stopped'
+    }
+}
+
 
 
 
