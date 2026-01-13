@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(photos/emil-widlund-xrbbXIXAWY0-unsplash.jpg)
+    no-repeat center center/cover fixed;
+}
+
+.resize {
+    width: 25px;
+    height: auto;
+    border: none;
+}
+
+.container {
+    background-color: goldenrod;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    height: 100px;
+}
+
+#timer {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    background: transparent;
+    border: none;
+    margin: 10px;
+
+}
