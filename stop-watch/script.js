@@ -12,6 +12,8 @@ let playStopBtn = document.querySelector('#play');
 let timeInterval = null;
 let timerStatus = 'stopped';
 
+let resetBtn = document.querySelector('#reset')
+
 function time() {
     seconds++
 
@@ -49,19 +51,32 @@ function time() {
     timer.innerText = twoDigitHr + ':' + twoDigitMin + ':' + twoDigitSec;
 }
 
-
-// FIX BUTTON RENDERING
-
 playStopBtn.addEventListener('click', () => renderButtons());
 
 function renderButtons() {
-    if (timerStatus === 'stoppped') {
+    if (timerStatus === 'stopped') {
         timeInterval = window.setInterval(time, 1000);
+        playStopBtn.src = 'icons/pause.png';
         timerStatus = 'started'
     } else {
         window.clearInterval(timeInterval)
+        playStopBtn.src = 'icons/play-button.png'
         timerStatus = 'stopped'
     }
+}
+
+resetBtn.addEventListener('click', () => resetButton());
+
+// FIX BUTTON FUNCTIONALITY, RESET SHOULD NOT RESTART THE TIME ITSELF
+
+function resetButton() {
+    window.clearInterval(timeInterval);
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+    timer.textContent = '00:00:00'
+    renderButtons()
+
 }
 
 
