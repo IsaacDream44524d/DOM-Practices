@@ -15,7 +15,7 @@ body {
 }
 
 .resize {
-    width: 25px;
+    width: 35px;
     height: auto;
     border: none;
 }
@@ -27,7 +27,7 @@ body {
     padding: 20px;
     margin: 10px;
     width: 200px;
-    height: 100px;
+    height: 120px;
 }
 
 #timer {
@@ -45,4 +45,8 @@ button {
     border: none;
     margin: 10px;
 
+}
+
+button:hover {
+    cursor: pointer;
 }
