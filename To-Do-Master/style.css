@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/background/tony-litvyak-mjqusI9kFH0-unsplash.jpg)
+    no-repeat center center/cover fixed;
+
+}
+
+.input-box {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    border: 1px solid  rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 55px;
+    margin-top: 200px;
+}
+
+
+#input {
+    flex: 6;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input-box button {
+    flex: 1;
+    padding: 2px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.input-box button:hover {
+    background-color: green;
+}
+
+#add-icon {
+    width: 24px;
+    height: auto;
+}
+
+.task-list {
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list img {
+    width: 24px;
+    height: auto;
+}
+
+.task-list button {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 1px white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.task-list .check-btn:hover {
+    background-color: green;
+}
+
+.task-list .delete-btn:hover {
+    background-color: red;
+}
+
+
+
