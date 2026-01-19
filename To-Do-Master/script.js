@@ -6,7 +6,6 @@ const addBtn = document.getElementById('add-btn');
 let inputBox = document.querySelector('#input');
 inputBox.innerHTML = '';
 
-
 addBtn.addEventListener('click', () => addTask());
 
 function addTask() {
@@ -19,15 +18,16 @@ function addTask() {
     tasks.push(newTask);
     viewAll()
     inputBox.value = '';
-    console.log(tasks)
+
 }
 
-function viewAll(task) {
+function viewAll() {
     // loop through the array to get the task append to a p in a div
     // add classlist to div to style
-    taskContainer.innerHTML ='';
+    taskContainer.innerHTML = '';
     for (let i = 0; i < tasks.length; i++) {
         let para = document.createElement('p');
+        para.classList.add('tasky')
         para.textContent = tasks[i].title;
         let taskList = document.createElement('div');
         taskList.appendChild(para);
@@ -37,6 +37,15 @@ function viewAll(task) {
         //console.log(tasks[i].title)
     }
 }
+
+function completeTask() {
+    // grub the p tag and draw line through 
+    let task = document.querySelector('.tasky');
+    task.classList.toggle('line-through')
+    // add style to the p tag
+    
+};
+
 
 // add buttons for task functionality
 function buttons(taskList) {
